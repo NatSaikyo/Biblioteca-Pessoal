@@ -46,6 +46,18 @@ main {
     padding: 2rem;
 }
 
+.index_body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* Estilo para ocultar elementos */
 .hidden {
     display: none;
