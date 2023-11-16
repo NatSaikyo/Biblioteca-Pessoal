@@ -1,17 +1,37 @@
 /* Reset básico */
-body, h1, h2, h3, ul, li, a {
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
 }
 
 /* Estilização do header */
 header {
-    background-color: #333;
-    color: white;
     padding: 1rem 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.linha_header {
+    width: 10rem;
+    background-color: black;
+    height: 0.1rem;
+    border-radius: 50px;
 }
 
 header h1 {
@@ -24,6 +44,8 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
 }
 
 nav li {
@@ -31,14 +53,16 @@ nav li {
 }
 
 nav a {
-    color: white;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 nav a:hover {
-    background-color: #555;
+    border: black 0.12rem solid;
+    border-radius: 50px;
 }
 
 /* Estilo do conteúdo principal */
@@ -46,16 +70,53 @@ main {
     padding: 2rem;
 }
 
+.main_main {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+
+.section_img {
+    width: 50vw;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 7rem;
+    border-right: black 0.12rem solid;
+}
+
+.section_img img {
+    width: 16rem;
+}
+
 .index_body {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    width: 32.5rem;
+    justify-content: center;
+    gap: 1rem;
+    margin-left: 5rem;
+    padding-left: 4rem;
+    border-left: black 0.12rem solid;
+}
+
+.index_body h2 {
+    font-size: 3.5rem;
+    width: 27rem;
+}
+
+.index_body p {
+    font-size: 2.5rem;
+    width: 25rem;
 }
 
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #555;
+    font-size: 0.8rem;
 }
 
 /* Estilo para ocultar elementos */
