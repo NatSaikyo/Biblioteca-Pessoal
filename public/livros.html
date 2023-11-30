@@ -14,11 +14,15 @@
     <header>
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/livros.html">Livros</a></li>
+                <li><a href="/" class="button_header">Home</a></li>
+                <li><a href="/livros.html" class="button_header">Livros</a></li>
+                <li><a href="/autores.html" class="button_header">Autores</a></li>
+                <li><a href="/editoras.html" class="button_header">Editoras</a></li>
+                <!-- Outras páginas podem ser adicionadas aqui -->
             </ul>
         </nav>
         <h1>Livros</h1>
+        <div class="linha_header"></div>
     </header>
 
     <main>
@@ -40,12 +44,25 @@
     </main>
 
     <!-- Popup para Adicionar/Atualizar Livro -->
-    <div id="bookPopup" class="hidden">
+    <div id="bookPopup" class="hidden popup">
         <form id="bookForm">
             <h3>Adicionar/Atualizar Livro</h3>
             <input type="hidden" id="id_livro">
             <input type="text" id="titulo" placeholder="Título" required>
-            <input type="text" id="autor" placeholder="Autor" required>
+            <div>
+                <label for="autor">Autor:</label>
+                <select id="autor" required>
+                  <option value="">Selecione um autor</option>
+                  <!-- Opções de autores serão adicionadas aqui -->
+                </select>
+              </div>
+              <div>
+                <label for="editora">Editora:</label>
+                <select id="editora" required>
+                  <option value="">Selecione uma editora</option>
+                  <!-- Opções de editoras serão adicionadas aqui -->
+                </select>
+              </div>
             <input type="date" id="dataPublicacao" placeholder="Data de Publicação" required>
             <button type="submit">Salvar</button>
             <button type="button" id="closePopupBtn">Fechar</button>
