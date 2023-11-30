@@ -48,16 +48,16 @@ function deleteautor(id) {
     });
 }
 
-function editarautor(Autores) {
+function editarautor(autores) {
     const addAutBtn = document.getElementById("addAutBtn");
     const nome = document.getElementById("nome_a");
     const biografia = document.getElementById("biografia");
     const dataNascimento = document.getElementById("dataNascimento");
     const autorId= document.getElementById("id_autor");
-    nome.value = Autores.nome;
-    biografia.value = Autores.biografia;
-    dataNascimento.value = new Date(Autores.dataNascimento).toISOString().split('T')[0];
-    autorId.value = Autores.id;
+    nome.value = autores.nome;
+    biografia.value = autores.biografia;
+    dataNascimento.value = new Date(autores.dataNascimento).toISOString().split('T')[0];
+    autorId.value = autores.id;
     addAutBtn.click();
 /**/
 }

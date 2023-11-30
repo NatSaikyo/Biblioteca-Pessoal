@@ -69,6 +69,13 @@ nav a:hover {
     border-radius: 50px;
 }
 
+.diabo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
 /* Estilo do conteúdo principal */
 main {
     padding: 2rem;
@@ -166,14 +173,14 @@ footer {
 }
 
 .popup button[type="submit"] {
-    background: #007BFF;
+    background: black;
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .popup button[type="submit"]:hover {
-    background: #0056b3;
+    background: black;
 }
 
 .popup #closePopupBtn {
@@ -189,13 +196,13 @@ footer {
     background: none;
     border: none;
     cursor: pointer;
-    color: #007BFF; /* Cor do ícone */
+    color: black; /* Cor do ícone */
     font-size: 1.2rem; /* Tamanho do ícone */
     transition: color 0.3s;
 }
 
 .icon-btn:hover {
-    color: #0056b3; /* Cor do ícone ao passar o mouse */
+    color: black; /* Cor do ícone ao passar o mouse */
 }
 
 /* Pode querer estilizar de forma diferente dependendo da ação */
